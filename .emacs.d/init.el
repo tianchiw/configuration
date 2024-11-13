@@ -16,19 +16,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(display-line-numbers-type 'relative)
+ '(global-display-line-numbers-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Cousine Nerd Font Mono" :foundry "nil" :slant normal :weight regular :height 120 :width normal)))))
+ '(default ((t (:family "Cousine Nerd Font Mono" :foundry "nil" :slant normal :weight regular :height 130 :width normal)))))
 
 (add-hook 'python-mode-hook
 	  (lambda ()
-	    (setq python-indent-offset 2)))
+	    (setq-default python-indent-offset 2)))
 
 (add-hook 'java-mode-hook
 	  (lambda ()
-	    (setq java-indent-offset 2)))
+	    (setq-default java-indent-offset 2)))
 
